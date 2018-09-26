@@ -25,16 +25,16 @@ p {
 
 header {
     background-color: #ffffff;
-    min-width: 540px;
-    width: 100vw;
+    min-width: 960px;
+    width: 100%;
     border-bottom: 2px solid #cccccc;
 }
 
 .topnav {
     margin: 0 auto;
-    width: 100vw;
+    width: 960px;
     min-width: 540px;
-    max-width: 960px;
+    
     background-color: #ffffff;
 }
 
@@ -50,7 +50,8 @@ header {
 .heading-space {
     display: inline-block;
     margin: 0 auto;
-    width: calc(100vw - 510px);
+    /* width: calc(100vw - 510px); */
+    width: 450px;
     max-width: 450px;
     min-width: 20px;
 }
@@ -90,7 +91,7 @@ hr {
 }
 
 #headshot {
-    width: 16.2%;
+    width: 151px;
     float: left;
     margin: 10px;
 }
@@ -98,9 +99,9 @@ hr {
 .main-body {
     margin: 15px auto;
     clear: both;
-    width: 85vw;
-    min-width: 500px;
-    max-width: 930px;
+    width: 930px;
+    /* min-width: 500px; */
+    /* max-width: 930px; */
     background-color: #ffffff;
     padding: 15px;
     border: 2px solid #dddddd;
@@ -217,7 +218,7 @@ body {
 footer {
     flex-shrink: 0;
     background-color: #666666;
-    min-width: 540px;
+    min-width: 960px;
     width: 100vw;
     height: 45px;
     border-top: 5px solid #4aaaa5;
@@ -235,3 +236,74 @@ footer {
     
 }
 
+@media only screen and (max-width: 980px) {
+    .main-body {
+        width: 720px;
+    }
+
+    .heading-space {
+        width: 270px;
+    }
+
+    header, .topnav, footer {
+        width: 100%;
+        min-width: 740px;
+    }
+
+    #headshot {
+        width: 165px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-body {
+        width: 600px;
+    }
+
+    .heading-space {
+        width: 150px;
+    }
+
+    header, .topnav, footer {
+        width: 100%;
+        min-width: 650px;
+    }
+
+    #headshot {
+        width: 165px;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    .main-body {
+        width: 340px;
+    }
+
+    .heading-space {
+        width: 0;
+    }
+
+    header, .topnav, footer {
+        width: 100%;
+        min-width: 390px;
+    }
+    .nav-heading {
+        width: calc(100vw - 28px);
+        display: block;
+    }
+
+    .topnav a {
+        width: 20%;
+        margin: 10px 0px;
+    }
+
+    #headshot {
+        width: 95%;
+    }
+
+    .img-container {
+        margin-left: 30px;
+        
+    }
+}
